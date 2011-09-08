@@ -1832,9 +1832,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>text.subversion-commit meta.scope.changed-files</string>
+			<string>text.svn-commit meta.scope.changed-files</string>
 			<key>scope</key>
-			<string>text.subversion-commit meta.scope.changed-files, text.subversion-commit meta.scope.changed-files.svn meta.diff.separator</string>
+			<string>text.svn-commit meta.scope.changed-files, text.svn-commit meta.scope.changed-files meta.diff.separator</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -1845,9 +1845,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>text.subversion-commit</string>
+			<string>text.svn-commit</string>
 			<key>scope</key>
-			<string>text.subversion-commit</string>
+			<string>text.svn-commit</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
