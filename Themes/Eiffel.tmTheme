@@ -316,7 +316,7 @@
 			<key>name</key>
 			<string>Embedded source</string>
 			<key>scope</key>
-			<string>text source, string.unquoted</string>
+			<string>text source, string.unquoted, meta.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>

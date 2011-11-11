@@ -254,7 +254,7 @@
 			<key>name</key>
 			<string>Embedded Source</string>
 			<key>scope</key>
-			<string>text source</string>
+			<string>text source, meta.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
