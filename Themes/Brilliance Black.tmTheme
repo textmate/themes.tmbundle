@@ -109,7 +109,7 @@
 			<key>name</key>
 			<string>~ String Unquoted</string>
 			<key>scope</key>
-			<string>string.unquoted -string.unquoted.embedded, string.quoted.double.multiline, meta.scope.heredoc</string>
+			<string>string.unquoted -string.unquoted.embedded -(meta.tag string), string.quoted.double.multiline, meta.scope.heredoc</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -427,7 +427,7 @@
 			<key>name</key>
 			<string>√ Variable Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition, punctuation.separator.variable</string>
+			<string>punctuation.definition -meta.tag, punctuation.separator.variable</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -499,11 +499,11 @@
 			<key>name</key>
 			<string>¢ Class</string>
 			<key>scope</key>
-			<string>meta.class -meta.class.instance, declaration.class, meta.definition.class, declaration.module</string>
+			<string>meta.class -meta.class.instance -declaration.class -meta.definition.class -declaration.module meta.class.actionscript</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#FF000033</string>
+				<string>#87000033</string>
 				<key>foreground</key>
 				<string>#870000</string>
 			</dict>
@@ -792,7 +792,7 @@ meta.brace.round</string>
 			<key>name</key>
 			<string>™ Keyword Operator Comparison</string>
 			<key>scope</key>
-			<string>keyword.operator.comparison</string>
+			<string>keyword.operator.comparison, keyword.operator.relational</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -913,7 +913,7 @@ meta.brace.round</string>
 			<key>name</key>
 			<string>✘ Tag Form</string>
 			<key>scope</key>
-			<string>meta.tag.form, meta.tag.block.form</string>
+			<string>meta.tag.form, meta.tag.block.form, meta.tag.inline.form</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -924,9 +924,9 @@ meta.brace.round</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>✘ Tag Meta</string>
+			<string>✘ Tag Void</string>
 			<key>scope</key>
-			<string>meta.tag.meta</string>
+			<string>meta.tag.inline.any.void, meta.tag.form.any.void</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -994,11 +994,22 @@ meta.brace.round</string>
 			<key>name</key>
 			<string>✘ Tag value</string>
 			<key>scope</key>
-			<string>meta.tag string -source -punctuation, text source text meta.tag string -punctuation</string>
+			<string>meta.tag string -source -punctuation, text source text meta.tag string -punctuation, meta.tag string.unquoted, text source text meta.tag string.unquoted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#FFFFFF66</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>✘ Tag "Value" value</string>
+			<key>scope</key>
+			<string>meta.property.value.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFFBF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2016,7 +2027,7 @@ source.css meta.scope.property-list meta.property-value punctuation.separator.ar
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string></string>
 			</dict>
 		</dict>
 		<dict>
@@ -2066,9 +2077,9 @@ source.css meta.scope.property-list meta.property-value punctuation.separator.ar
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>text.svn-commit meta.scope.changed-files</string>
+			<string>text.subversion-commit meta.scope.changed-files</string>
 			<key>scope</key>
-			<string>text.svn-commit meta.scope.changed-files, text.svn-commit meta.scope.changed-files meta.separator</string>
+			<string>text.subversion-commit meta.scope.changed-files, text.subversion-commit meta.scope.changed-files.svn meta.diff.separator</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2079,9 +2090,9 @@ source.css meta.scope.property-list meta.property-value punctuation.separator.ar
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>text.svn-commit</string>
+			<string>text.subversion-commit</string>
 			<key>scope</key>
-			<string>text.svn-commit</string>
+			<string>text.subversion-commit</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2458,7 +2469,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group1</string>
 			<key>scope</key>
-			<string>meta.odd-tab.group1, meta.group.braces, meta.block.slate, text.xml.strict meta.tag, meta.paren-group, meta.section</string>
+			<string>meta.bracketed, meta.odd-tab.group1, meta.group.braces, meta.block.slate, text.xml.strict meta.tag, meta.paren-group, meta.section, meta.block, meta.block, meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2469,7 +2480,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group2</string>
 			<key>scope</key>
-			<string>meta.even-tab.group2, meta.group.braces meta.group.braces, meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag, meta.group.braces meta.group.braces, meta.paren-group meta.paren-group, meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed, meta.even-tab.group2, meta.group.braces meta.group.braces, meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag, meta.group.braces meta.group.braces, meta.paren-group meta.paren-group, meta.section meta.section, meta.block meta.block, meta.scope meta.scope, meta.scope meta.block</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2480,7 +2491,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group3</string>
 			<key>scope</key>
-			<string>meta.odd-tab.group3, meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed, meta.odd-tab.group3, meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section, meta.block meta.block meta.block, meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2491,7 +2502,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group4</string>
 			<key>scope</key>
-			<string>meta.even-tab.group4, meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.even-tab.group4, meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2502,7 +2513,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group5</string>
 			<key>scope</key>
-			<string>meta.odd-tab.group5, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.odd-tab.group5, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2513,7 +2524,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group6</string>
 			<key>scope</key>
-			<string>meta.even-tab.group6, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.even-tab.group6, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2524,7 +2535,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group7</string>
 			<key>scope</key>
-			<string>meta.odd-tab.group7, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.odd-tab.group7, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2535,7 +2546,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group8</string>
 			<key>scope</key>
-			<string>meta.even-tab.group8, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.even-tab.group8, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2546,7 +2557,7 @@ source.ocaml punctuation.separator.match-definition
 			<key>name</key>
 			<string>Group9</string>
 			<key>scope</key>
-			<string>meta.odd-tab.group9, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces , meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate , text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section</string>
+			<string>meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed meta.bracketed, meta.odd-tab.group9, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate meta.block.slate, text.xml.strict meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag meta.tag, meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces meta.group.braces, meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group meta.paren-group, meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section meta.section, meta.block meta.block meta.block meta.block meta.block meta.block meta.block meta.block meta.block, meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope meta.scope</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -2610,6 +2621,19 @@ meta.property.vendor.microsoft.trident.5 punctuation.terminator.rule</string>
 				<string></string>
 				<key>foreground</key>
 				<string>#F5C034</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid for IE6</string>
+			<key>scope</key>
+			<string>meta.invalid.vendor.microsoft.trident</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FF000040</string>
+				<key>fontStyle</key>
+				<string>underline</string>
 			</dict>
 		</dict>
 	</array>
