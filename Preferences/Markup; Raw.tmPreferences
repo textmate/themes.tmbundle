@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Markup: Raw</string>
 	<key>scope</key>
-	<string>markup.raw</string>
+	<string>markup.raw.block</string>
 	<key>settings</key>
 	<dict>
 		<key>fontName</key>
