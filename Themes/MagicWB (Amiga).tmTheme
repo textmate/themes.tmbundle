@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>author</key>
 	<string>Allan Odgaard</string>
 	<key>comment</key>
 	<string>Inspired by the original 8 MagicWB colors from Martin Huttenloher</string>
+	<key>gutterSettings</key>
+	<dict>
+		<key>background</key>
+		<string>#888888</string>
+		<key>divider</key>
+		<string>#1A3853</string>
+		<key>foreground</key>
+		<string>#111111</string>
+		<key>selectionBackground</key>
+		<string>#3A68A3</string>
+		<key>selectionForeground</key>
+		<string>#FFFFFF</string>
+	</dict>
 	<key>name</key>
 	<string>MagicWB (Amiga)</string>
 	<key>settings</key>
