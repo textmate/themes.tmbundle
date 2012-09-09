@@ -40,6 +40,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Foldings</string>
+			<key>scope</key>
+			<string>deco.folding</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BFBFBF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
 			<string>keyword, storage</string>
