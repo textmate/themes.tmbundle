@@ -8,6 +8,8 @@
 	<string>(π) Soryu, 2005</string>
 	<key>name</key>
 	<string>Sunburst</string>
+	<key>semanticClass</key>
+	<string>theme.dark.sunburst</string>
 	<key>settings</key>
 	<array>
 		<dict>

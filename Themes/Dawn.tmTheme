@@ -8,6 +8,8 @@
 	<string>Dawn</string>
 	<key>name</key>
 	<string>Dawn</string>
+	<key>semanticClass</key>
+	<string>theme.light.dawn</string>
 	<key>settings</key>
 	<array>
 		<dict>

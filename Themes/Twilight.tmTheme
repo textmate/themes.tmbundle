@@ -6,6 +6,8 @@
 	<string>Michael Sheets</string>
 	<key>name</key>
 	<string>Twilight</string>
+	<key>semanticClass</key>
+	<string>theme.dark.twilight</string>
 	<key>settings</key>
 	<array>
 		<dict>

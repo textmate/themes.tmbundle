@@ -6,6 +6,8 @@
 	<string>Chris Thomas</string>
 	<key>name</key>
 	<string>Mac Classic</string>
+	<key>semanticClass</key>
+	<string>theme.light.mac-classic</string>
 	<key>settings</key>
 	<array>
 		<dict>

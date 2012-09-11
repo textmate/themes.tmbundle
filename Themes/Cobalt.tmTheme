@@ -8,6 +8,8 @@
 	<string>Created by Jacob Rus.  Based on ‘Slate’ by Wilson Miner</string>
 	<key>name</key>
 	<string>Cobalt</string>
+	<key>semanticClass</key>
+	<string>theme.dark.cobalt</string>
 	<key>settings</key>
 	<array>
 		<dict>

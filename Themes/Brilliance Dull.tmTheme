@@ -8,6 +8,8 @@
 	<string>Thomas Aylott ㊷ subtleGradient.com</string>
 	<key>name</key>
 	<string>Brilliance Dull</string>
+	<key>semanticClass</key>
+	<string>theme.dark.brilliance.dull</string>
 	<key>settings</key>
 	<array>
 		<dict>
