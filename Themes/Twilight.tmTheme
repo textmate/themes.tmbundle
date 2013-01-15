@@ -463,7 +463,7 @@
 			<key>name</key>
 			<string>⎇ diff.header</string>
 			<key>scope</key>
-			<string>meta.diff, meta.diff.header, meta.separator, meta.diff.range</string>
+			<string>meta.diff, meta.diff.header, meta.separator, meta.diff.range, meta.diff.index</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
