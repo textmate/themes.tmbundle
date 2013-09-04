@@ -44,11 +44,37 @@
 			<key>name</key>
 			<string>Source base</string>
 			<key>scope</key>
-			<string>source</string>
+			<string>source - source source</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
 				<string>#000000</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded source (text)</string>
+			<key>scope</key>
+			<string>text meta.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#000000</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded source (source)</string>
+			<key>scope</key>
+			<string>source meta.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#181818</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
