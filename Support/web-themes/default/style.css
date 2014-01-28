@@ -140,7 +140,7 @@ blockquote {
 
 code, pre {
 	font-size: 95%;
-	font-family: "LuxiMono", "Bitstream Vera Sans Mono", "Monaco", "Courier New", monospace;
+	font-family: "LuxiMono", "Bitstream Vera Sans Mono", "Menlo", "Monaco", "Courier New", monospace;
 	word-wrap: break-word;
 	white-space: pre;
 	white-space: pre-wrap;
