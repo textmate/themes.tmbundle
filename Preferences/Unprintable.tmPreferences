@@ -10,10 +10,6 @@
 	<dict>
 		<key>background</key>
 		<string>#00000011</string>
-		<key>fontName</key>
-		<string>Menlo</string>
-		<key>fontSize</key>
-		<integer>12</integer>
 		<key>foreground</key>
 		<string>#AAAAAA</string>
 	</dict>
