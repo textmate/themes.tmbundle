@@ -4,12 +4,10 @@ body {
 	margin: 2em 2em 2em 4.5em;
 }
 #tm_webpreview_header {
-	position: static;
 	display: none;
 }
 
 #tm_webpreview_footer {
-	position: static;
 	display: none;
 }
 
@@ -84,13 +82,4 @@ div.footnotes {
    padding: 1em;
    font-size: 90%;
    background: #F0F0F0;
-}
-
-/* Prevent printing from crashing by overloading these rules. */
-.plain #tm_webpreview_footer,
-.plain div#exception_report.framed:last-child {
-  position: static;
-}
-.plain div.executor > .controls {
-  position: static;
 }
