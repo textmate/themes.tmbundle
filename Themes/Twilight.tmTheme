@@ -309,7 +309,7 @@
 			<key>name</key>
 			<string>c C/C++ Preprocessor Line</string>
 			<key>scope</key>
-			<string>meta.preprocessor.c</string>
+			<string>meta.preprocessor.c, source.swift meta.preprocessor</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -320,7 +320,7 @@
 			<key>name</key>
 			<string>c C/C++ Preprocessor Directive</string>
 			<key>scope</key>
-			<string>meta.preprocessor.c keyword</string>
+			<string>meta.preprocessor.c keyword, source.swift meta.preprocessor keyword</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
