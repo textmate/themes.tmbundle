@@ -902,7 +902,7 @@ meta.brace.round</string>
 			<key>name</key>
 			<string>✘ Tag Other</string>
 			<key>scope</key>
-			<string>meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script, source.js.embedded punctuation.definition.tag.html, source.css.embedded punctuation.definition.tag.html</string>
+			<string>meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -1819,9 +1819,9 @@ source.css meta.scope.property-list meta.property-value punctuation.separator.ar
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>source.js.embedded</string>
+			<string>Embedded source.js</string>
 			<key>scope</key>
-			<string>source.js.embedded</string>
+			<string>text.html meta.embedded.block, text.html punctuation.whitespace.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
