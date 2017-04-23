@@ -135,6 +135,9 @@ body.plain {
   white-space: pre;
   word-wrap: normal;
 }
+.plain kbd {
+  font-size: 95%;
+}
 .plain hr {
   background-color: #e0e0e0;
   border: none;
