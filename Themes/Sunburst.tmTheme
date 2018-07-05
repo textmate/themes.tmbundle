@@ -318,7 +318,7 @@
 			<key>name</key>
 			<string>✘ Doctype/XML Processing</string>
 			<key>scope</key>
-			<string>meta.sgml.html meta.doctype, meta.sgml.html meta.doctype entity, meta.sgml.html meta.doctype string, meta.xml-processing, meta.xml-processing entity, meta.xml-processing string</string>
+			<string>meta.tag.metadata.doctype, meta.tag.metadata.doctype entity, meta.tag.metadata.doctype string, meta.tag.metadata.doctype string markup.underline, meta.tag.metadata.processing.xml, meta.tag.metadata.processing.xml entity, meta.tag.metadata.processing.xml string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

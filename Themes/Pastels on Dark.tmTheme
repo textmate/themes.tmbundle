@@ -406,7 +406,7 @@
 			<key>name</key>
 			<string>HTML: DocInfo XML</string>
 			<key>scope</key>
-			<string>meta.tag.preprocessor.xml</string>
+			<string>meta.tag.metadata.processing.xml</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -417,7 +417,7 @@
 			<key>name</key>
 			<string>HTML: DocType</string>
 			<key>scope</key>
-			<string>meta.tag.sgml.doctype</string>
+			<string>meta.tag.metadata.doctype</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -428,7 +428,7 @@
 			<key>name</key>
 			<string>HTML: DocInfo DTD</string>
 			<key>scope</key>
-			<string>string.quoted.docinfo.doctype.DTD</string>
+			<string>meta.tag.metadata.doctype string.quoted</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -450,7 +450,7 @@
 			<key>name</key>
 			<string>HTML: Tag</string>
 			<key>scope</key>
-			<string>meta.tag, entity.name.tag.xhtml</string>
+			<string>meta.tag, entity.name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

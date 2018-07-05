@@ -250,7 +250,7 @@
 			<key>name</key>
 			<string>XML Declaration</string>
 			<key>scope</key>
-			<string>meta.tag.preprocessor.xml</string>
+			<string>meta.tag.metadata.processing.xml</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

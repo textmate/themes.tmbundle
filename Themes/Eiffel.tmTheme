@@ -329,7 +329,7 @@
 			<key>name</key>
 			<string>Markup XML declaration</string>
 			<key>scope</key>
-			<string>meta.xml-processing, declaration.xml-processing</string>
+			<string>meta.tag.metadata.processing.xml, meta.tag.metadata.processing.xml string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -342,7 +342,7 @@
 			<key>name</key>
 			<string>Markup DOCTYPE</string>
 			<key>scope</key>
-			<string>meta.doctype, declaration.doctype</string>
+			<string>meta.tag.metadata.doctype</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -355,7 +355,7 @@
 			<key>name</key>
 			<string>Markup DTD</string>
 			<key>scope</key>
-			<string>meta.doctype.DTD, declaration.doctype.DTD</string>
+			<string>meta.tag.metadata.doctype string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
