@@ -546,6 +546,50 @@
 				<string>#B0B3BA14</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Test: 1</string>
+			<key>scope</key>
+			<string>meta.test1</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#0E2231C5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Test: 2</string>
+			<key>scope</key>
+			<string>meta.test2</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#420E0990</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Test: 3</string>
+			<key>scope</key>
+			<string>meta.test3</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4A410D90</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Test: 4</string>
+			<key>scope</key>
+			<string>meta.test4</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#253B2290</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>766026CB-703D-4610-B070-8DE07D967C5F</string>
